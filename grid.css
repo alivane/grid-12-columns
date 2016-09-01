@@ -174,11 +174,14 @@ body {
 /*insert of class to div*/
 *{
   text-align: center;
-  color:#B5F6FC;
+  color:#E9F9FA;
   font-family: cursive;
 }
+body{
+  background-color: #E3F0F7
+}
 header{
-  background-color: #227A9F;
+  background-color: #5CAED8;
   height: 100px;
   padding: 30px;
   margin-bottom: 20px;
