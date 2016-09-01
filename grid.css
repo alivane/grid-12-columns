@@ -1,0 +1,269 @@
+/*! Grid - Mike Simmonds - http://simmo.github.com/Grid/ */
+
+/* Set font base */
+body {
+  font-size: 100%;
+  -webkit-text-size-adjust: none;
+}
+
+/* Set container default width */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+/* Clearfix all rows */
+.row:before, .row:after {
+  content: '';
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.row {
+  *zoom: 1;
+  margin-left: -2%; /* Offsets the first column's left margin */
+}
+
+/* Column structure */
+.row [class*=col] {
+  margin-left: 2%;
+  display: block;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Column widths */
+.row .col-1 {
+  width: 6.333%;
+}
+.row .col-2 {
+  width: 14.667%;
+}
+.row .col-3 {
+  width: 23%;
+}
+.row .col-4 {
+  width: 31.333%;
+}
+.row .col-5 {
+  width: 39.667%;
+}
+.row .col-6 {
+  width: 48%;
+}
+.row .col-7 {
+  width: 56.333%;
+}
+.row .col-8 {
+  width: 64.667%;
+}
+.row .col-9 {
+  width: 73%;
+}
+.row .col-10 {
+  width: 81.333%;
+}
+.row .col-11 {
+  width: 89.667%;
+}
+.row .col-12 {
+  width: 98%;
+}
+
+/* Offset columns */
+.row .offset-1 {
+  margin-left: 10.333%;
+}
+.row .offset-2 {
+  margin-left: 18.667%;
+}
+.row .offset-3 {
+  margin-left: 27%;
+}
+.row .offset-4 {
+  margin-left: 35.333%;
+}
+.row .offset-5 {
+  margin-left: 43.667%;
+}
+.row .offset-6 {
+  margin-left: 52%;
+}
+.row .offset-7 {
+  margin-left: 60.333%;
+}
+.row .offset-8 {
+  margin-left: 68.667%;
+}
+.row .offset-9 {
+  margin-left: 77%;
+}
+.row .offset-10 {
+  margin-left: 85.333%;
+}
+.row .offset-11 {
+  margin-left: 93.667%;
+}
+
+/* Large displays */
+@media (min-width:1200px) {
+  /* Scale font base */
+  body {
+    font-size: 1.125em;
+  }
+  
+  /* Fix container width */
+  .container {
+    width: 1160px;
+  }
+}
+
+/* Landscape tablets */
+@media (min-width:768px) and (max-width:980px) {
+  /* Fix container width */
+  .container {
+    width: 728px;
+  }
+}
+
+/* Portrait tablets */
+@media (max-width:768px) {
+  /* Scale font base */
+  body {
+    font-size: 1.125em;
+  }
+  
+  /* Make container fluid with fixed gutter */
+  .container {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  /* Removes any offset */
+  .row [class*=col] {
+    margin-left: 2%;
+  }
+  
+  /* Set width for columns and s2 grid */
+  .row [class*=col], .row .s4 {
+    width: 98%;
+  }
+  .row .s1 {
+    width: 23%;
+  }
+  .row .s2 {
+    width: 48%;
+  }
+  .row .s3 {
+    width: 73%;
+  }
+}
+
+/* Smartphones */
+@media (max-width:480px) {
+  /* Scale font base */
+  body {
+    font-size: 1em; /* 16/16 = 1 */
+  }
+}
+/*insert of class to div*/
+*{
+  text-align: center;
+  color:#B5F6FC;
+  font-family: cursive;
+}
+header{
+  background-color: #227A9F;
+  height: 100px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.col-1{
+  background-color: #FE384B;
+ border:2px solid #12A2B7;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 10px;
+}
+.col-2{
+  background-color: #F23E8A;
+ border:2px solid #12A2B7;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 10px;
+}
+.col-3{
+  background-color: #4A072D;
+ border:2px solid #12A2B7;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 10px;
+}
+.col-4{
+  background-color: #D449DD;
+  border:2px solid #12A2B7;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 10px;
+}
+.col-5{
+  background-color: #9342DE;
+  border:2px solid #12A2B7;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 10px;
+}
+.col-6{
+  background-color: #464DDA;
+  border:2px solid #12A2B7;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 10px;
+}
+.col-7{
+  background-color: #2E9AED;
+  border:2px solid #12A2B7;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 10px;
+}
+.col-8{
+  background-color: #32B2C9;
+  border:2px solid #12A2B7;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 10px;
+}
+.col-9{
+  background-color: #19D293;
+  border:2px solid #12A2B7;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 10px;
+}
+.col-10{
+  background-color: #45BC20;
+  border:2px solid #12A2B7;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 10px;
+}
+.col-11{
+  background-color: #ADDF41;
+  border:2px solid #12A2B7;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 10px;
+}
+.col-12{
+  background-color: #FD7D45;
+  border:2px solid #12A2B7;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 10px;
+}
